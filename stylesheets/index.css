@@ -1,0 +1,105 @@
+@import url(universal.css);
+
+body {
+	/* width: 100%;
+	height: 100%; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+body > h1 {
+	margin-top: 1.5rem;
+	margin-bottom: 0.3rem;
+}
+
+input[type="button"] {
+	transition: 2ms;
+	background-color: rgb(220, 0, 0);
+	font-weight: 600;
+}
+
+input[type="button"]:hover {
+	background-color: rgb(250, 1, 1);
+}
+
+#candidateCards {
+	transition: 10s;
+	margin-top: auto;
+	margin-bottom: auto;
+	position: static;
+	display: flex;
+	flex-direction: row;
+}
+
+#votedFor {
+	top: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	height: 21.875rem;
+	width: 33.3333333rem;
+	position: fixed;
+
+	background-color: rgba(49, 49, 49, 0.95);
+	border: 0.313rem inset;
+	border-radius: 15%;
+	border-top-color: red;
+	border-right-color: red;
+	border-bottom-color: blue;
+	border-left-color: blue;
+}
+
+#votedFor > h3 {
+	color: white;
+	font-size: 1.525rem;
+}
+
+.candidateCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(50, 50, 50, 0.6);
+	border: 0.313rem inset yellow;
+	border-top-color: red;
+	border-right-color: red;
+	border-bottom-color: blue;
+	border-left-color: blue;
+	border-radius: 1.563rem;
+}
+
+.candidatePFP {
+	width: 12.5rem;
+	height: 12.5rem;
+	border: 0.313rem solid rgba(0, 0, 0, 0.74);
+	border-radius: 100%;
+	margin: 0.3125rem;
+	margin-bottom: 0.125rem;
+}
+
+/* .candidateName {
+} */
+
+.candidateCardVote {
+	color: white;
+	background-color: rgb(220, 0, 0);
+	align-content: center;
+	font-family: monospace;
+	font-size: 1.125rem;
+	font-weight: 600;
+	border-radius: 10%;
+	width: 3.125rem;
+}
+
+.candidateCardVote:disabled {
+	color: rgba(228, 228, 228, 0.7);
+	background-color: rgba(77, 77, 77, 0.7);
+}
+
+.reportButton {
+	background-color: red;
+	color: white;
+}
